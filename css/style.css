@@ -1,0 +1,435 @@
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+body{
+    background: #15161E;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type:  none;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4{
+    padding: 0;
+    margin: 0;
+    color: #E0E4E7;
+}
+
+.main{
+    background-image: url('../img/main-fon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.main__container-menu{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    margin-bottom: 160px;
+}
+
+.container-menu__logo{
+    color: #E0E4E7;
+    font-family: 'Oswald';
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.container-menu__menu{
+    display: flex;
+}
+
+.menu__item-menu{
+    color: #E0E4E7;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.menu__item-menu+.menu__item-menu{
+    padding-left: 16px;
+}
+
+.main__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 231px;
+}
+
+.header__above-title-box{
+    color: #E0E4E7;
+    font-family: 'Oswald';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.header__above-title-box-line{
+    text-align: center;
+}
+
+.header-title{
+    color: #E0E4E7;
+    font-family: 'Oswald';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.header__title-box{
+    margin-bottom: 4px;
+}
+
+.header__subtitle{
+    margin-bottom: 65px;
+}
+
+.header__btn{
+    width: 147px;
+    height: 39px;
+    border-radius: 25px;
+    background: #255A9C;
+    border: none;
+    color: #E0E4E7;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.heder-title__rpide{
+    color: #255A9C;
+    font-family: 'Oswald';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.header__subtitle{
+    color: #FFA500;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+
+.section__title{
+    margin-top: 60px;
+    position: relative;
+    color: #E0E4E7;
+    font-family: 'Oswald';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+/* .section__title::before{
+    content: "";
+    position: absolute;
+    width: 96%;
+    height: 1px;
+    background: rgba(224, 228, 231, 0.16);
+    top: 50%;
+    left: -100%;
+} */
+
+/* .section__title::after{
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 1px;
+    background: rgba(224, 228, 231, 0.16);
+    top: 50%;
+    right: -140%;
+} */
+
+
+.section__subtitle{
+    margin-top: 10px;
+    color: rgba(224, 228, 231, 0.87);
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 72px;
+}
+
+.directions__items{
+    display: flex;
+    justify-content: center;
+}
+
+.directions__item{
+    position: relative;
+    width: 380px;
+    height: 540px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.directions__item::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(7, 7, 7, 0.4);
+}
+
+.overlay{
+    color: #E0E4E7;
+    font-family: Oswald;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    z-index: 999;
+    margin-top: 18px;
+    margin-left: 20px;
+}
+
+.text-bottom{
+    writing-mode: vertical-lr;
+    color: #E0E4E7;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 999;
+    margin-bottom: 20px;
+    margin-left: 18px;
+}
+
+.directions{
+    margin-bottom: 90px;
+}
+
+.directions__item-img-1{
+    background-image: url('../img/Rectangle5.jpg');
+    transition: transform 0.6s;
+}
+
+.directions__item-img-2{
+    background-image: url('../img/Rectangle25.jpg');
+    transition: transform 0.6s;
+}
+
+.directions__item-img-3{
+    background-image: url('../img/33.jpg');
+    transition: transform 0.6s;
+}
+
+.directions__item:hover{
+    transform: scale(1.07);
+    z-index: 1;
+}
+
+.values{
+    background: #15161E;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.values__fon{
+    background-image: url('../img/foncen.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+}
+
+.values__shadow-top{
+    background: linear-gradient(180deg, #15161E 0%, rgba(21, 22, 30, 0.00) 100%);
+    height: 41px;
+    width: 100%;
+}
+
+.values__shadow-bottom{
+    position: relative;
+    background: linear-gradient(0deg, #15161E 0%, rgba(21, 22, 30, 0.00) 100%);
+    height: 41px;
+    width: 100%;
+    z-index: 999;
+}
+
+.values__items-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -70px;
+    margin-top: 70px;
+}
+
+.values__item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin: 0 70px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 165, 0, 0.53);
+    max-width: 244px;
+    margin-bottom: 80px;    
+}
+
+.values__item-title{
+    color: #FFA829;
+    text-align: center;
+    font-family: 'Oswald';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.values__item-text{
+    color: rgba(224, 228, 231, 0.80);
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.values__item-icon{
+    max-width: 118px;
+    margin-bottom: 8px;
+}
+
+.values__item-1{
+    margin-bottom: 100px;
+}
+
+.values__item-2{
+    margin-top: 22px;
+}
+
+.values__item-3{
+    margin-bottom: 133px;   
+}
+
+.values__item-4{
+    margin-left: 100px;
+    margin-bottom: 127px;
+}
+
+.values__item-5{
+    margin-top: 24px;
+}
+
+.values__item-6{
+    margin-right: 120px;
+    margin-bottom: 124px;
+}
+
+.agency-numbers{
+    background-image: url('../img/fonce.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+.agency-numbers__main-blok{
+    display: flex;
+    margin-top: 50px;
+}
+
+.agency-numbers__text-blok{
+    margin-top: 100px;
+}
+
+
+.agency-numbers__image{
+    margin-right: 26px;
+    transform: translateY(41px);
+}
+
+.text-blok__title{
+    color: #E0E4E7;
+    font-family: 'Inter';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.text-block__btl{
+    color: #FFA829;
+}
+
+.text-block__event{
+    color: #99C7DE;
+}
+
+.text-blok__subtitle{
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.text-blok__btn{
+    border: none;
+    border-radius: 25px;
+    background: #FFA829;
+    color: #15161E;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    cursor: pointer;
+}

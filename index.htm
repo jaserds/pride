@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
@@ -12,7 +15,7 @@
         <div class="container">
             <div class="main__container-menu">
                 <div class="container-menu__logo">
-                    
+                    111
                 </div>
                 <ul class="container-menu__menu">
                     <li class="menu__item-menu">Главная</li>
@@ -26,10 +29,21 @@
             <div class="main__header">
                 <div class="header__above-title-box">
                     Рекламное агенство
+                    <div class="header__above-title-box-line">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="125" height="6" viewBox="0 0 125 6" fill="none">
+                            <path d="M3 3L122 3.00001" stroke="url(#paint0_linear_5_53)" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 10"/>
+                            <defs>
+                              <linearGradient id="paint0_linear_5_53" x1="-1.07534" y1="4.50006" x2="126.041" y2="1.84348" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#255A9C" stop-opacity="0.94"/>
+                                <stop offset="1" stop-color="#99C7DE" stop-opacity="0.63"/>
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                    </div>
                 </div>
                 <div class="header__title-box">
                     <h1 class="header-title">
-                        PRIDE advertising agency
+                        <span class="heder-title__rpide">PRIDE</span> advertising agency
                     </h1>
                 </div>
                 <div class="header__subtitle-box">
@@ -43,24 +57,24 @@
     </section>
     <section class="directions">
         <div class="section__title-container">
-            <hr>
-            <h2 class="section__title">Направления</h2>
-            <hr>
-            <div class="section__subtitle-container">
-                <h3 class="section__subtitle">Создание уникальных впечатлений для наших клиентов во всех каналах продвижения.</h3>
+            <div class="container">
+                <h2 class="section__title">Направления</h2>
+                <div class="section__subtitle-container">
+                    <h3 class="section__subtitle">Создание уникальных впечатлений для наших клиентов во всех каналах продвижения.</h3>
+                </div>
             </div>
         </div>
         <div class="container">
             <div class="directions__items">
-                <div class="directions__item">
+                <div class="directions__item directions__item-img-1">
                     <div class="overlay">BTL</div>
                     <div class="text-bottom">Посмотреть подробнее</div>
                 </div>
-                <div class="directions__item">
+                <div class="directions__item directions__item-img-2">
                     <div class="overlay">EVENT</div>
                     <div class="text-bottom">Посмотреть подробнее</div>
                 </div>
-                <div class="directions__item">
+                <div class="directions__item directions__item-img-3">
                     <div class="overlay">PRODUCTION</div>
                     <div class="text-bottom">Посмотреть подробнее</div>
                 </div>
@@ -68,86 +82,87 @@
         </div>
     </section>
     <section class="values">
-        <div class="values__shadow-top"></div>
+        <div class="values__fon">
+            <div class="values__shadow-top"></div>
+            <div class="section__title-container">
+                <div class="container">
+                    <h2 class="section__title">Ценности</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="values__items-box">
+                    <div class="values__item values__item-1">
+                        <div class="values__item-title">
+                            Правильный фокус
+                        </div>
+                        <img class="values__item-icon" src="./img/eys.svg"/>
+                        <div class="values__item-text">Акцент на решениях, не на проблемах</div>
+                    </div>
+                    <div class="values__item values__item-2">
+                        <div class="values__item-title">
+                            Огромное количество энергии
+                        </div>
+                        <img class="values__item-icon" src="./img/pir.svg"/>
+                        <div class="values__item-text">Продумываем новые способы узнать, удовлетворить и удивить наших клиентов.</div>
+                    </div>
+                    <div class="values__item values__item-3">
+                        <div class="values__item-title">
+                            Невозможное возможно!
+                        </div>
+                        <img class="values__item-icon" src="./img/xor.svg"/>
+                        <div class="values__item-text">Доказано годами успешной реализации</div>
+                    </div>
+                    <div class="values__item values__item-4">
+                        <div class="values__item-title">
+                            Одержимость
+                        </div>
+                        <img class="values__item-icon" src="./img/bax.svg"/>
+                        <div class="values__item-text">Любим то, что делаем!</div>
+                    </div>
+                    <div class="values__item values__item-5">
+                        <div class="values__item-title">
+                            Клиентоориентированность
+                        </div>
+                        <img class="values__item-icon" src="./img/diamond.svg"/>
+                        <div class="values__item-text">Всегда ставим наших клиентов на первое место</div>
+                    </div>
+                    <div class="values__item values__item-6">
+                        <div class="values__item-title">
+                            Осознанный переработанный опыт
+                        </div>
+                        <img class="values__item-icon" src="./img/circle.svg"/>
+                        <div class="values__item-text">Долой скепсис!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="values__shadow-bottom"></div>
+        </div>
+    </section>
+
+    <section class="agency-numbers">
         <div class="section__title-container">
-            <hr>
-            <h2 class="section__title">Ценности</h2>
-            <hr>
+            <div class="container">
+                <h2 class="section__title">Агенство в цифрах</h2>
+            </div>
         </div>
         <div class="container">
-            <div class="values__items-box">
-                <div class="values__item">
-                    <div class="values__item-title">
-                        Правильный фокус
-                    </div>
-                    <img class="values__item-icon" />
-                    <div class="values__item-text">Акцент на решениях, не на проблемах</div>
-                </div>
-                <div class="values__item">
-                    <div class="values__item-title">
-                        Огромное количество энергии
-                    </div>
-                    <img class="values__item-icon" />
-                    <div class="values__item-text">Продумываем новые способы узнать, удовлетворить и удивить наших клиентов.</div>
-                </div>
-                <div class="values__item">
-                    <div class="values__item-title">
-                        Невозможное возможно!
-                    </div>
-                    <img class="values__item-icon" />
-                    <div class="values__item-text">Доказано годами успешной реализации</div>
-                </div>
-                <div class="values__item">
-                    <div class="values__item-title">
-                        Одержимость
-                    </div>
-                    <img class="values__item-icon" />
-                    <div class="values__item-text">Любим то, что делаем!</div>
-                </div>
-                <div class="values__item">
-                    <div class="values__item-title">
-                        Клиентоориентированность
-                    </div>
-                    <img class="values__item-icon" />
-                    <div class="values__item-text">Всегда ставим наших клиентов на первое место</div>
-                </div>
-                <div class="values__item">
-                    <div class="values__item-title">
-                        Осознанный переработанный опыт
-                    </div>
-                    <img class="values__item-icon" />
-                    <div class="values__item-text">Долой скепсис!</div>
+            <div class="agency-numbers__main-blok">
+                <img class="agency-numbers__image" src="./img/woomen.png" alt="">
+                <div class="agency-numbers__text-blok">
+                    <h3 class="text-blok__title">Основатель с 15 летним опытом реализации в <br/><span class="text-block__btl">BTL</span> и <span class="text-block__event">Event</span></h3>
+                    <h4 class="text-blok__subtitle">> 50 реализованных проектов ежегодно</h4>
+                    <button class="text-blok__btn">Заказать расчет промо-акции</button>
                 </div>
             </div>
         </div>
         <div class="values__shadow-bottom"></div>
     </section>
 
-    <section class="agency-numbers">
-        <div class="section__title-container">
-            <hr>
-            <h2 class="section__title">Ценности</h2>
-            <hr>
-        </div>
-        <div class="container">
-            <div class="agency-numbers__main-blok">
-                <div class="agency-numbers__image">
-                    <img src="#" alt="">
-                </div>
-                <div class="agency-numbers__text-blok">
-                    <h3 class="text-blok__title">Основатель с 15 летним опытом реализации в BTL и Event</h3>
-                    <h4 class="text-blok__subtitle">> 50 реализованных проектов ежегодно</h4>
-                    <button class="text-blok__btn">Заказать расчет промо-акции</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="geography-of-work">
+            <div class="container">
+                <h2 class="section__title">География работы</h2>
+            </div>
         <div class="section__title-container">
-            <hr>
-            <h2 class="section__title">География работы</h2>
-            <hr>
             <div class="container">
                 <div class="geography-of-work__box">
                     <div class="geography-of-work__left">
@@ -173,16 +188,99 @@
                 </div>
                 <div class="advantages__container">
                     <div class="advantages__left">
-                        
+                        <div class="advantages__blok">
+                            <div class="container">
+                                <h2 class="advantages_title">Преимущества</h2>
+                            </div>
+                        </div>
                     </div>
                     <div class="advantages__right">
-
+                        <div class="advantages__item">
+                            <img src="#" alt="" class="advantages__item-img">
+                            <p class="advantages__item-text">Скорость</p>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="#" alt="" class="advantages__item-img">
+                            <p class="advantages__item-text">Точность</p>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="#" alt="" class="advantages__item-img">
+                            <p class="advantages__item-text">Экспертиза</p>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="#" alt="" class="advantages__item-img">
+                            <p class="advantages__item-text">Внимание к деталям</p>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="#" alt="" class="advantages__item-img">
+                            <p class="advantages__item-text">Контроль на всех этапах реализации<p>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="#" alt="" class="advantages__item-img">
+                            <p class="advantages__item-text">Адекватная цена</p>
+                        </div>
+                        <div class="advantages__item">
+                            <img src="#" alt="" class="advantages__item-img">
+                            <p class="advantages__item-text">Качественный подход к обучению персонала</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="reviews">
+        <div class="section__title-container">
+            <div class="container">
+                <h2 class="section__title">Отзывы</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="reviews__slider">
 
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__logo-blok">
+                <img src="#" alt="" class="footer__logo">
+            </div>
+            <div class="footer__main-content">
+                <div class="footer__main-content-left">
+                    <p class="footer__text">
+                        Рекламное агентство «Прайд». Ростов-на-Дону. Организация массовых мероприятий любой сложности и масштаба по ЮФО.
+                    </p>
+                    <p class="footer__text">
+                        Ваш надежный партнер на Юге страны.
+                    </p>
+                    <div class="footer__social">
+                        <h3 class="footer__header">Следите за нами</h3>
+                        <div class="footer__social-icons">
+                            <img src="#" alt="" class="footer__social-icon">
+                            <img src="#" alt="" class="footer__social-icon">
+                            <img src="#" alt="" class="footer__social-icon">
+                        </div>
+                    </div>
+                    <div class="footer__contacts">
+                        <h3 class="footer__header">Контакты<h3>
+                        <div class="footer__contacts-text">
+                            г. Ростов-на-Дону, ул. Стачки, д. 1
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="footer__main-content-right">
+                    <h3 class="footer__form-header">РАССЧИТАЙТЕ СТОИМОСТЬ ПРОМОАКЦИИ</h3>
+                    <form action="" class="footer__form">
+                        <input type="text" class="footer__form-input" required>
+                        <input type="text" class="footer__form-input" required>
+                        <input type="text" class="footer__form-input" required>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script type="module" src="js/index.js"></script>
 </body>
 </html>

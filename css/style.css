@@ -9,10 +9,19 @@ body{
     overflow-x: hidden;
 }
 
+textarea{
+    resize: none;
+}
+
 ul {
     list-style-type:  none;
     padding: 0;
     margin: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4{
@@ -35,6 +44,7 @@ h1, h2, h3, h4{
     justify-content: space-between;
     padding-top: 25px;
     margin-bottom: 160px;
+    align-items: center;
 }
 
 .container-menu__logo{
@@ -291,7 +301,7 @@ h1, h2, h3, h4{
     background: linear-gradient(0deg, #15161E 0%, rgba(21, 22, 30, 0.00) 100%);
     height: 41px;
     width: 100%;
-    z-index: 999;
+    z-index: 50;
 }
 
 .values__items-box{
@@ -432,4 +442,409 @@ h1, h2, h3, h4{
     text-transform: capitalize;
     padding: 10px 30px;
     cursor: pointer;
+}
+
+.geo-fon{
+    background-image: url('../img/geofon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.values__shadow-geo{
+    background: linear-gradient(180deg, #15161E 0%, rgba(21, 22, 30, 0.00) 100%);
+    height: 40px;
+    width: 100%;
+}
+
+.geography-of-work__box{
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+    margin-bottom: 200px;
+}
+
+.geo-title{
+    padding: 0;
+    margin: 40px 0 0 0;
+}
+
+.geography-of-work__title{
+    color: #E0E4E7;
+    font-family: 'Inter';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 30px;
+    margin-top: 90px;
+}
+
+.geography-of-work__cyties{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 13px;
+}
+
+.geography-of-work__item{
+    display: flex;
+    color: #E0E4E7;
+    font-family: 'Inter';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    padding-left: 25px;
+    align-items: center;
+}
+
+.geography-of-work__item-point::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(255, 165, 0, 0.97);
+    box-shadow: 0px 0px 15px rgba(255, 165, 0, 0.50);
+    left: 0;
+}
+
+
+.advantages__container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 90px;
+}
+
+.advantages_title{
+    color: rgba(21, 22, 30, 0.87);
+    font-family: "Oswald";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.advantages__container-box{
+    display: flex;
+    background-image: url('../img/preimg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 361px;
+    min-height: 358px;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantages__right{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    justify-content: center;
+    align-items: self-start;
+    max-width: 680px;
+    column-gap: 20px;
+}
+
+.advantages__item{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages__item:nth-child(5){
+    padding-right: 30px;
+    width: 160px;
+}
+
+.advantages__item:nth-child(7){
+    padding-left: 30px;
+    width: 160px;
+}
+
+.advantages__item-img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.advantages__item-text{
+    color: #F1F1F1;
+    text-align: center;
+    font-family: "Oswald";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+.reviews{
+    padding-top: 30px;
+    padding-bottom: 110px;
+}
+
+.reviews__slider{
+    padding-top: 50px;
+}
+
+.reviews-slider__item{
+    height: 520px;
+}
+
+.slider__item-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    opacity: 1;
+    color:#E0E4E7
+    
+}
+
+.slick-dots li button:before{
+    font-size: 20px;
+}
+
+.slick-track{
+    margin-bottom: 30px;
+}
+
+.slick-dots li button:before{
+    color: #E0E4E7;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before{
+    color: #FFA500;
+    opacity: 1;
+}
+
+.footer{
+    border-top: 1px solid rgba(224, 228, 231, 0.16);
+    padding-bottom: 60px;
+}
+
+.footer__main-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__text{
+    width: 407px;
+    color: #E0E4E7;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 30px;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.footer__header{
+    color: #E0E4E7;
+    font-family: 'Oswald';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.footer__social{
+    margin-bottom: 30px;
+}
+
+.footer__contacts-text{
+    color: #E0E4E7;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__form-header{
+    padding-top: 80px;
+    margin-bottom: 30px;
+    color: #E0E4E7;
+    font-family: 'Oswald';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.footer__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__form-input{
+    margin-bottom: 12px;
+    outline: none;
+    padding: 5px;
+    color: #202020;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.footer__form-textarea{
+    margin-bottom: 18px;
+    outline: none;
+    padding: 5px;
+    color: #202020;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.footer__form-btn{
+    border-radius: 25px;
+    background: #255A9C;
+    color: #E0E4E7;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    align-self: flex-start;
+    outline: none;
+    padding: 9px 33px;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-window__container{
+    background-color:  rgba(21, 22, 30, 0.80);
+
+
+    ;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    padding: 30px 0;
+}
+
+.modal-window__box{
+    position: relative;
+    background-image: url('../img/fon-modalwin.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 750px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.modal-window__close-btn{
+    position: absolute;
+    right: 70px;
+    top: 80px;
+    cursor: pointer;
+}
+
+.modal-window__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 380px;
+}
+
+.modal-window__text{
+    color: #FFF;
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.11);
+    font-family: 'Oswald';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.modal-window__form-input{
+    border-radius: 5px;
+    background: #FFF;
+    margin-bottom: 12px;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #313131;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px; /* 114.286% */
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.13);
+}
+
+.modal-window__form-textarea{
+    border-radius: 5px;
+    background: #FFF;
+    margin-bottom: 12px;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #313131;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px; /* 114.286% */
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.13);
+    margin-bottom: 20px;
+}
+
+.modal-window__form-btn{
+    border-radius: 25px;
+    background: #FFF;
+    color: #FFA500;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    border: none;
+    padding: 9px 30px;
+    cursor: pointer;
+    align-self: start;
+}
+
+.disable{
+    display: none;
 }

@@ -6,8 +6,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick/slick-theme.css"/>
+   
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    
     <title>Document</title>
 </head>
 <body>
@@ -15,7 +19,7 @@
         <div class="container">
             <div class="main__container-menu">
                 <div class="container-menu__logo">
-                    111
+                    <img class="logo" src="./img/logo.png" alt="">
                 </div>
                 <ul class="container-menu__menu">
                     <li class="menu__item-menu">Главная</li>
@@ -152,6 +156,19 @@
                     <h3 class="text-blok__title">Основатель с 15 летним опытом реализации в <br/><span class="text-block__btl">BTL</span> и <span class="text-block__event">Event</span></h3>
                     <h4 class="text-blok__subtitle">> 50 реализованных проектов ежегодно</h4>
                     <button class="text-blok__btn">Заказать расчет промо-акции</button>
+                    <div class="modal-window__container disable">
+                        <div class="modal-window__box">
+                            <img src="./img/modalclose.svg" class="modal-window__close-btn" />
+                            <p class="modal-window__text">РАССЧИТАЙТЕ СТОИМОСТЬ ПРОМОАКЦИИ</p>
+                            <form action="" class="modal-window__form">
+                                <input type="text" class="modal-window__form-input" placeholder="Имя" required>
+                                <input type="text" class="modal-window__form-input" placeholder="Телефон" required>
+                                <input type="text" class="modal-window__form-input" placeholder="Почта" required>
+                                <textarea class="modal-window__form-textarea" name="" id="" cols="30" rows="10" placeholder="Кратко опишите задачу"></textarea>
+                                <input class="modal-window__form-btn" type="button" value="Отправить">
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -159,69 +176,74 @@
     </section>
 
     <section class="geography-of-work">
+        <div class="geo-fon">
+            <div class="values__shadow-geo"></div>
             <div class="container">
-                <h2 class="section__title">География работы</h2>
+                <h2 class="section__title geo-title">География работы</h2>
             </div>
-        <div class="section__title-container">
-            <div class="container">
-                <div class="geography-of-work__box">
-                    <div class="geography-of-work__left">
-                        <h3 class="geography-of-work__title">>10 городов покрытия</h3>
-                        <ul class="geography-of-work__cyties">
-                            <li class="geography-of-work__item geography-of-work__item-point">Ростов-на-Дону</li>
-                            <li class="geography-of-work__item geography-of-work__item-point">Симферополь</li>
-                            <li class="geography-of-work__item geography-of-work__item-point">Севастополь</li>
-                            <li class="geography-of-work__item geography-of-work__item-point">Краснодар</li>
-                            <li class="geography-of-work__item geography-of-work__item-point">Ялта</li>
-                            <li class="geography-of-work__item geography-of-work__item-point">Геленджик</li>
-                            <li class="geography-of-work__item geography-of-work__item-point">Волгоград</li>
-                            <li class="geography-of-work__item geography-of-work__item-point">Астрахань</li>
-                            <li class="geography-of-work__item geography-of-work__item-point">Саратов</li>
-                            <li class="geography-of-work__item geography-of-work__item-point">Самара</li>
-                            <li class="geography-of-work__item geography-of-work__item-point">Анапа</li>
-                            <li class="geography-of-work__item geography-of-work__item-point">Сочи</li>
-                        </ul>
+            <div class="section__title-container">
+                <div class="container">
+                    <div class="geography-of-work__box">
+                        <div class="geography-of-work__left">
+                            <h3 class="geography-of-work__title">>10 городов покрытия</h3>
+                            <ul class="geography-of-work__cyties">
+                                <li class="geography-of-work__item geography-of-work__item-point">Ростов-на-Дону</li>
+                                <li class="geography-of-work__item geography-of-work__item-point">Симферополь</li>
+                                <li class="geography-of-work__item geography-of-work__item-point">Севастополь</li>
+                                <li class="geography-of-work__item geography-of-work__item-point">Краснодар</li>
+                                <li class="geography-of-work__item geography-of-work__item-point">Ялта</li>
+                                <li class="geography-of-work__item geography-of-work__item-point">Геленджик</li>
+                                <li class="geography-of-work__item geography-of-work__item-point">Волгоград</li>
+                                <li class="geography-of-work__item geography-of-work__item-point">Астрахань</li>
+                                <li class="geography-of-work__item geography-of-work__item-point">Саратов</li>
+                                <li class="geography-of-work__item geography-of-work__item-point">Самара</li>
+                                <li class="geography-of-work__item geography-of-work__item-point">Анапа</li>
+                                <li class="geography-of-work__item geography-of-work__item-point">Сочи</li>
+                            </ul>
+                        </div>
+                        <div class="geography-of-work__right">
+                            <img src="./img/rndmap.svg" alt="Контур карты Ростовской Области" class="geography-of-work__map-rnd">
+                        </div>
                     </div>
-                    <div class="geography-of-work__right">
-                        <img src="#" alt="Контур карты Ростовской Области" class="geography-of-work__map-rnd">
-                    </div>
-                </div>
-                <div class="advantages__container">
-                    <div class="advantages__left">
-                        <div class="advantages__blok">
-                            <div class="container">
-                                <h2 class="advantages_title">Преимущества</h2>
+                    <div class="content">
+                        <div class="advantages__container">
+                            <div class="advantages__left">
+                                <div class="advantages__blok">
+                                    <div class="advantages__container-box">
+                                        <h2 class="advantages_title">Преимущества</h2>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="advantages__right">
-                        <div class="advantages__item">
-                            <img src="#" alt="" class="advantages__item-img">
-                            <p class="advantages__item-text">Скорость</p>
-                        </div>
-                        <div class="advantages__item">
-                            <img src="#" alt="" class="advantages__item-img">
-                            <p class="advantages__item-text">Точность</p>
-                        </div>
-                        <div class="advantages__item">
-                            <img src="#" alt="" class="advantages__item-img">
-                            <p class="advantages__item-text">Экспертиза</p>
-                        </div>
-                        <div class="advantages__item">
-                            <img src="#" alt="" class="advantages__item-img">
-                            <p class="advantages__item-text">Внимание к деталям</p>
-                        </div>
-                        <div class="advantages__item">
-                            <img src="#" alt="" class="advantages__item-img">
-                            <p class="advantages__item-text">Контроль на всех этапах реализации<p>
-                        </div>
-                        <div class="advantages__item">
-                            <img src="#" alt="" class="advantages__item-img">
-                            <p class="advantages__item-text">Адекватная цена</p>
-                        </div>
-                        <div class="advantages__item">
-                            <img src="#" alt="" class="advantages__item-img">
-                            <p class="advantages__item-text">Качественный подход к обучению персонала</p>
+                            <div class="advantages__right">
+                                <div class="advantages__item">
+                                    <img src="./img/speed-icon.png" alt="" class="advantages__item-img">
+                                    <p class="advantages__item-text">Скорость</p>
+                                </div>
+                                <div class="advantages__item">
+                                    <img src="./img/target-icon.png" alt="" class="advantages__item-img">
+                                    <p class="advantages__item-text">Точность</p>
+                                </div>
+                                <div class="advantages__item">
+                                    <img src="./img/expertise-icon.png" alt="" class="advantages__item-img">
+                                    <p class="advantages__item-text">Экспертиза</p>
+                                </div>
+                                <div class="advantages__item">
+                                    <img src="./img/person-icon.png" alt="" class="advantages__item-img">
+                                    <p class="advantages__item-text">Внимание к деталям</p>
+                                </div>
+                                <div class="advantages__item">
+                                    <img src="./img/def-icon.png" alt="" class="advantages__item-img">
+                                    <p class="advantages__item-text">Контроль на всех этапах реализации<p>
+                                </div>
+                                <div class="advantages__item">
+                                    <img src="./img/ruble-icon.png" alt="" class="advantages__item-img">
+                                    <p class="advantages__item-text">Адекватная цена</p>
+                                </div>
+                                <div class="advantages__item">
+                                    <img src="./img/creativity-icon.png" alt="" class="advantages__item-img">
+                                    <p class="advantages__item-text">Качественный подход к обучению персонала</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -236,7 +258,25 @@
         </div>
         <div class="container">
             <div class="reviews__slider">
-
+                <div class="reviews-slider__item">
+                    <img class="slider__item-img" src="./img/sliderImg/ООО Промосмарт_page-0001.jpg" alt="">
+                </div>
+                <div class="reviews-slider__item">
+                    <img class="slider__item-img" src="./img/sliderImg/РА В12.jpeg" alt="">
+                    
+                </div>
+                <div class="reviews-slider__item">
+                    <img class="slider__item-img" src="./img/sliderImg/ООО Эксперт_page-0001.jpg" alt="">
+                </div>
+                <div class="reviews-slider__item">
+                    <img class="slider__item-img" src="./img/sliderImg/ООО Юник_page-0001.jpg" alt="">
+                </div>
+                <div class="reviews-slider__item">
+                    <img class="slider__item-img" src="./img/sliderImg/ООО ТД Ренессанс_page-0001.jpg" alt="">
+                </div>
+                <div class="reviews-slider__item">
+                    <img class="slider__item-img" src="./img/sliderImg/РПК Зеркало_page-0001.jpg" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -247,18 +287,19 @@
             </div>
             <div class="footer__main-content">
                 <div class="footer__main-content-left">
+                    <img class="logo" src="./img/logo.png" alt="" class="logo">
                     <p class="footer__text">
                         Рекламное агентство «Прайд». Ростов-на-Дону. Организация массовых мероприятий любой сложности и масштаба по ЮФО.
-                    </p>
-                    <p class="footer__text">
+                        <br /><br/>
                         Ваш надежный партнер на Юге страны.
                     </p>
+                       
                     <div class="footer__social">
                         <h3 class="footer__header">Следите за нами</h3>
                         <div class="footer__social-icons">
-                            <img src="#" alt="" class="footer__social-icon">
-                            <img src="#" alt="" class="footer__social-icon">
-                            <img src="#" alt="" class="footer__social-icon">
+                            <img src="./img/youtube.png" alt="" class="footer__social-icon">
+                            <img src="./img/vk.png" alt="" class="footer__social-icon">
+                            <img src="./img/insta.png" alt="" class="footer__social-icon">
                         </div>
                     </div>
                     <div class="footer__contacts">
@@ -267,20 +308,23 @@
                             г. Ростов-на-Дону, ул. Стачки, д. 1
                         </div>
                     </div>
-                    
                 </div>
                 <div class="footer__main-content-right">
                     <h3 class="footer__form-header">РАССЧИТАЙТЕ СТОИМОСТЬ ПРОМОАКЦИИ</h3>
                     <form action="" class="footer__form">
-                        <input type="text" class="footer__form-input" required>
-                        <input type="text" class="footer__form-input" required>
-                        <input type="text" class="footer__form-input" required>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <input type="text" class="footer__form-input" placeholder="Имя" required>
+                        <input type="text" class="footer__form-input" placeholder="Телефон" required>
+                        <input type="text" class="footer__form-input" placeholder="Почта" required>
+                        <textarea class="footer__form-textarea" name="" id="" cols="30" rows="10" placeholder="Кратко опишите задачу"></textarea>
+                        <input class="footer__form-btn" type="button" value="Отправить">
                     </form>
                 </div>
             </div>
         </div>
     </footer>
-    <script type="module" src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/slick/slick/slick.min.js"></script>
+    <script src="js/index.js"></script>
+
 </body>
 </html>

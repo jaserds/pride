@@ -462,7 +462,6 @@ h1, h2, h3, h4{
     display: flex;
     justify-content: space-between;
     gap: 90px;
-    margin-bottom: 200px;
 }
 
 .geo-title{
@@ -552,25 +551,15 @@ h1, h2, h3, h4{
 }
 
 .advantages__item{
-    width: 150px;
+    width: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.advantages__item:nth-child(5){
-    padding-right: 30px;
-    width: 160px;
-}
-
-.advantages__item:nth-child(7){
-    padding-left: 30px;
-    width: 160px;
-}
-
-.advantages__item-img{
-    width: 100px;
-    margin-bottom: 10px;
+.advantages__icon{
+    max-width: 100%;
+    height: auto;
 }
 
 .advantages__item-text{
@@ -847,4 +836,49 @@ h1, h2, h3, h4{
 
 .disable{
     display: none;
+}
+
+.advantages__items{
+    margin: 0;
+    margin-top: 60px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    grid-template-areas:
+    "item1 item2 item3"
+    "item4 item5 item6"
+    "item7 item8 item9";
+}
+
+.advantages__item-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages__item-box-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.advantages__item-img{
+    display: block;
+    width: 100%;
+    max-width: 100%; /* Добавлено для контроля ширины */
+    height: auto;
+    max-height: 100%; /* Добавлено для контроля высоты */
+    object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+    .advantages__items{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+      "item2 item1 item3"
+      "item5 item4 item6"
+      "item8 item7 item9";
+    }
 }

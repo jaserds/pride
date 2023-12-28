@@ -17,13 +17,35 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.querySelector('.text-blok__btn').addEventListener('click', () => {
-    document.querySelector('.modal-window__container').classList.remove('disable');
-    
+    document.querySelector('.modal-window__container').classList.remove('disable'); 
 })
 
 document.querySelector('.modal-window__close-btn').addEventListener('click', () => {
     document.querySelector('.modal-window__container').classList.add('disable');
 })
+
+window.onclick = function(event) {
+  let modal = document.getElementById('myModalBtl');
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+}
+
+function toggleMenu() {
+  let menu = document.getElementById('menu');
+  menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+}
+
+function openModalBtl(imageSrc) {
+  document.getElementById('myModalBtl').style.display = 'flex';
+  document.getElementById('modalBtlImg').src = imageSrc;
+}
+
+function closeModalBtl() {
+  document.getElementById('myModalBtl').style.display = 'none';
+}
+
+
 
 $('.reviews__slider').slick({
     dots: true,
@@ -50,6 +72,26 @@ $('.reviews__slider').slick({
           dots: true,
           arrows: false,
         }
-      }
+      },
+      {
+        breakpoint: 770,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          arrows: false,
+        }
+      },
     ]
   });

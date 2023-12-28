@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BTL - Личное Взаимодействие, Результат, Эффективность!</title>
+</head>
+<body>
+    <section class="btl-main">
+        <div class="container">
+            <div class="main__container-menu main_pad">
+                <div class="container-menu__logo">
+                    <img class="logo" src="./img/logo.png" alt="">
+                </div>
+                <div class="burger-menu">
+                    <div class="burger-icon" onclick="toggleMenu()">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <div class="menu" id="menu">
+                        <a href="#main-z">Главная</a>
+                        <a href="#directions-z">Направления</a>
+                        <a href="#values-z">Ценности</a>
+                        <a href="#agency-z">Цифры</a>
+                        <a href="#reviews-z">Отзывы</a>
+                        <a href="#footer-z">Контакты</a>
+                    </div>
+                </div>
+                <ul class="container-menu__menu">
+                    <li class="menu__item-menu"><a class="menu__item-menu" href="index.html#main-z">Главная</a></li>
+                    <li class="menu__item-menu"><a class="menu__item-menu" href="index.html#directions-z">Направления</a></li>
+                    <li class="menu__item-menu"><a class="menu__item-menu" href="index.html#values-z">Ценности</a></li>
+                    <li class="menu__item-menu"><a class="menu__item-menu" href="index.html#agency-z">Цифры</a></li>
+                    <li class="menu__item-menu"><a class="menu__item-menu" href="index.html#reviews-z">Отзывы</a></li>
+                    <li class="menu__item-menu"><a class="menu__item-menu" href="index.html#footer-z">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="section__title-padding">
+                <div class="section__title-r-line">
+                    <div class="container">
+                        <h2 class="section__title">НАПРАВЛЕНИЕ BTL</h2>
+                    </div>
+                </div>
+                <div class="section__subtitle-container">
+                    <div class="container">
+                        <h3 class="section__subtitle">BTL-Маркетинг: Личное Взаимодействие, Результат, Эффективность</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gallery">
+                <div class="thumb-box">
+                    <img class="thumbnail" src="./img/btl/img1.jpg" alt="Image 1" onclick="openModalBtl('./img/btl/img1.jpg')">
+                </div>
+                <div class="thumb-box">
+                    <img class="thumbnail" src="./img/btl/img2.jpg" alt="Image 2" onclick="openModalBtl('./img/btl/img2.jpg')">
+                </div>
+                <div class="thumb-box">
+                    <img class="thumbnail" src="./img/btl/img3.jpg" alt="Image 3" onclick="openModalBtl('./img/btl/img3.jpg')">
+                </div>
+                <div class="thumb-box">
+                    <img class="thumbnail" src="./img/btl/img4.jpg" alt="Image 4" onclick="openModalBtl('./img/btl/img4.jpg')">
+                </div>
+                <div class="thumb-box">
+                    <img class="thumbnail" src="./img/btl/img5.jpg" alt="Image 5" onclick="openModalBtl('./img/btl/img5.jpg')">
+                </div>
+                <div class="thumb-box">
+                    <img class="thumbnail" src="./img/btl/img6.jpg" alt="Image 6" onclick="openModalBtl('./img/btl/img6.jpg')">
+                </div>
+                <div class="thumb-box">
+                    <img class="thumbnail" src="./img/btl/img7.jpg" alt="Image 7" onclick="openModalBtl('./img/btl/img7.jpg')">
+                </div>
+                <div class="thumb-box">
+                    <img class="thumbnail" src="./img/btl/img8.jpg" alt="Image 8" onclick="openModalBtl('./img/btl/img8.jpg')">
+                </div>
+              </div>
+              <div class="button__box">
+                <button class="text-blok__btn">Заказать расчет промо-акции</button>
+              </div>
+              <div class="modal-window__container disable">
+                <div class="modal-window__box">
+                    <img src="./img/modalclose.svg" class="modal-window__close-btn" />
+                    <p class="modal-window__text">РАССЧИТАЙТЕ СТОИМОСТЬ ПРОМОАКЦИИ</p>
+                    <form action="" class="modal-window__form">
+                        <input type="text" class="modal-window__form-input" placeholder="Имя" required>
+                        <input type="text" class="modal-window__form-input" placeholder="Телефон" required>
+                        <input type="text" class="modal-window__form-input" placeholder="Почта" required>
+                        <textarea class="modal-window__form-textarea" name="" id="" cols="30" rows="10" placeholder="Кратко опишите задачу"></textarea>
+                        <input class="modal-window__form-btn" type="button" value="Отправить">
+                    </form>
+                </div>
+            </div>
+              
+              <div id="myModalBtl" class="modalBtl">
+                <span class="closeBtl" onclick="closeModalBtl()">&times;</span>
+                <img class="modalBtl-content" id="modalBtlImg">
+            </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer" id="footer-z">
+        <div class="container">
+            <div class="footer__logo-blok">
+                <img src="#" alt="" class="footer__logo">
+            </div>
+            <div class="footer__main-content">
+                <div class="footer__main-content-left">
+                    <img class="logo" src="./img/logo.png" alt="" class="logo">
+                    <p class="footer__text">
+                        Рекламное агентство «Прайд». Ростов-на-Дону. Организация массовых мероприятий любой сложности и масштаба по ЮФО.
+                        <br /><br/>
+                        Ваш надежный партнер на Юге страны.
+                    </p>
+                       
+                    <div class="footer__social">
+                        <h3 class="footer__header">Следите за нами</h3>
+                        <div class="footer__social-icons">
+                            <img src="./img/youtube.png" alt="" class="footer__social-icon">
+                            <img src="./img/vk.png" alt="" class="footer__social-icon">
+                            <img src="./img/insta.png" alt="" class="footer__social-icon">
+                        </div>
+                    </div>
+                    <div class="footer__contacts">
+                        <h3 class="footer__header">Контакты<h3>
+                        <div class="footer__contacts-text">
+                            г. Ростов-на-Дону, ул. Стачки, д. 1
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__main-content-right">
+                    <h3 class="footer__form-header">РАССЧИТАЙТЕ СТОИМОСТЬ ПРОМОАКЦИИ</h3>
+                    <form action="" class="footer__form">
+                        <input type="text" class="footer__form-input" placeholder="Имя" required>
+                        <input type="text" class="footer__form-input" placeholder="Телефон" required>
+                        <input type="text" class="footer__form-input" placeholder="Почта" required>
+                        <textarea class="footer__form-textarea" name="" id="" cols="30" rows="10" placeholder="Кратко опишите задачу"></textarea>
+                        <input class="footer__form-btn" type="button" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/slick/slick/slick.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

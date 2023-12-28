@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -7,6 +11,10 @@
 body{
     background: #15161E;
     overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
 }
 
 textarea{
@@ -70,11 +78,65 @@ h1, h2, h3, h4{
     line-height: normal;
     text-transform: capitalize;
     cursor: pointer;
+    text-decoration: none;
+
 }
 
 .menu__item-menu+.menu__item-menu{
     padding-left: 16px;
 }
+
+
+
+.burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.burger-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.bar {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    margin-bottom: 4px;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #15161E;
+}
+
+.menu a {
+    font-family: "Inter";
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.burger-icon{
+    display: none;
+}
+
+
+
+
+
 
 .main__header{
     display: flex;
@@ -130,6 +192,10 @@ h1, h2, h3, h4{
     line-height: normal;
     text-transform: capitalize;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 .heder-title__rpide{
@@ -214,6 +280,10 @@ h1, h2, h3, h4{
     font-weight: 300;
     line-height: normal;
     margin-bottom: 72px;
+}
+
+.oner-link{
+    text-decoration: none;
 }
 
 .directions__items{
@@ -434,7 +504,7 @@ h1, h2, h3, h4{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .text-blok__btn{
@@ -478,12 +548,12 @@ h1, h2, h3, h4{
 .geography-of-work__title{
     color: #E0E4E7;
     font-family: 'Inter';
-    font-size: 28px;
+    font-size: 21px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: normal;
-    margin-bottom: 30px;
-    margin-top: 90px;
+    margin-bottom: 50px;
+    margin-top: 0px;
 }
 
 .geography-of-work__cyties{
@@ -861,10 +931,6 @@ h1, h2, h3, h4{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    grid-template-areas:
-    "item1 item2 item3"
-    "item4 item5 item6"
-    "item7 item8 item9";
 }
 
 .advantages__item-box{
@@ -886,6 +952,69 @@ h1, h2, h3, h4{
     max-height: 100%; /* Добавлено для контроля высоты */
     object-fit: cover;
 }
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+
+  .myModalBtl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .thumb-box{
+    max-height: 400px;
+  }
+
+  .thumbnail {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .modalBtl {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .modalBtl-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+  }
+
+  .closeBtl {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .button__box{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    display: flex;justify-content: center;
+  }
+
+  .main_pad{
+    margin-bottom: 70px;
+  }
 
 @media (max-width: 1024px) {
     .values__items-box{
@@ -909,7 +1038,7 @@ h1, h2, h3, h4{
 
     .geography-of-work__title{
         margin-top: 0;
-        font-size: 25px;
+        font-size: 2vw;
     }
 
     .geography-of-work__item{
@@ -941,6 +1070,351 @@ h1, h2, h3, h4{
     }
 }
 
+@media (max-width: 768px) {
+    .header-title, .heder-title__rpide{
+        font-size: 32px;
+    }
+    .header__subtitle{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .section__subtitle{
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+    .directions__item{
+        height: 356px;
+    }
+    .overlay{
+        font-size: 20px;
+    }
+    .text-bottom{
+        font-size: 12px;
+    }
+    .text-blok__title{
+        margin-bottom: 10px;
+    }
+    .text-blok__subtitle{
+        margin-bottom: 10px;
+    }
+    .text-blok__btn {
+        font-size: 12px;
+    }
+
+    .values__items-box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .values__item{
+        margin: 0;
+        padding: 10px;
+        transform: translate(0, 0);
+        width: 100%;
+    }
+    .advantages__icon{
+        width: 40%;
+    }
+    .advantages__item-text{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .footer__form-header{
+        font-size: 16px;
+    }
+    .footer__text{
+        font-size: 12px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    .footer__header{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .footer__contacts-text{
+        font-size: 12px;
+    }
+    .footer__social-icon{
+        max-width: 40px;
+    }
+    .footer__form-header{
+        padding: 0;
+        padding-top: 10px;
+    }
+    .footer__form-input{
+        font-size: 12px;
+    }
+    .footer__form-btn{
+        font-size: 12px;
+    }
+    .modal-window__box{
+        max-width: 593px;
+    }
+    .modal-window__text{
+        margin: 0;
+    }
+    .modal-window__close-btn {
+        right: 70px;
+        top: 60px;
+    }
+    .geography-of-work__conatainer{
+        margin-top: 30px;
+    }
+    .geography-of-work__map-rnd{
+        max-width: 350px;
+    }
+    .geography-of-work__cyties{
+        column-gap: 20px;
+    }
+    .geography-of-work__item{
+        font-size: 11px;
+    }
+    #gallery{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .logo{
+        max-width: 75px;
+    }
+    .menu__item-menu{
+        font-size: 12px;
+    }
+    .agency-numbers__image{
+        max-width: 250px;
+    }
+    .agency-numbers__main-blok{
+        margin-top: 0;
+    }
+    .agency-numbers__text-blok{
+        margin-top: 70px;
+    }
+    .geography-of-work__map-rnd{
+        max-width: 250px;
+    }
+    .footer__main-content{
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    .footer__main-content-right{
+        order: 1;
+    }
+    .footer__main-content-left{
+        order: 2;
+    }
+    .footer__form{
+        max-width: 400px;
+    }
+    .footer__text{
+        width: auto;
+    }
+}
+
+@media (max-width: 545px) {
+    .advantages__items{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "item1 item2"
+        "item4 item3"
+        "item5 item6"
+        "item8 item7"
+        "item9 item10"
+        "item12 item11"
+        "item13 item14";
+    }
+
+    .advantages__item-1{
+        grid-area: item1;
+    }
+    .advantages__item-2{
+        grid-area: item2;
+    }
+    .advantages__item-3{
+        grid-area: item3;
+    }
+    .advantages__item-4{
+        grid-area: item4;
+    }
+    .advantages__item-5{
+        grid-area: item5;
+    }
+    .advantages__item-6{
+        grid-area: item6;
+    }
+    .advantages__item-7{
+        grid-area: item7;
+    }
+    .advantages__item-8{
+        grid-area: item8;
+    }
+    .advantages__item-9{
+        grid-area: item9;
+    }
+    .advantages__item-10{
+        grid-area: item10;
+    }
+    .advantages__item-11{
+        grid-area: item11;
+    }
+    .advantages__item-12{
+        grid-area: item12;
+    }
+    .advantages__item-13{
+        grid-area: item13;
+    }
+    .advantages__item-14{
+        grid-area: item14;
+    }
+    .advantages__item-15{
+        display: none;
+        grid-area: item15;
+    }
+}
+
+@media (max-width: 485px) {
+    .main{
+        background-position: right;
+    }
+    .container-menu__menu{
+        display: none;
+    }
+    .burger-icon {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+    .agency-numbers__image {
+        max-width: 170px;
+    }
+    .values__items-box{
+        margin-top: 30px;
+    }
+    .values__item {
+        max-width: 170px;
+    }
+    .values__item-title{
+        font-size: 11px;
+    }
+    .values__item-icon{
+        max-width: 80px;
+        margin-bottom: 10px;
+    }
+    .values__item-text{
+        font-size: 11px;line-height: 16px;
+    }
+    .text-blok__btn{
+        font-size: 10px;
+        padding: 7px 15px;
+    }
+    .geography-of-work__item-point::before{
+            width: 10px;
+            height: 10px;
+    }
+    .geography-of-work__item{
+        padding-left: 15px;
+    }
+    .geography-of-work__map-rnd {
+        max-width: 200px;
+    }
+    #gallery{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 420px) {
+    .main{
+        height: 77vh;
+    }
+    .main__header{
+        background-position: 0px;
+        margin-bottom: 0;
+    }
+    .main__container-menu{
+        margin-bottom: 96px;
+    }
+    .header__above-title-box{
+        font-size: 14px;
+    }
+    .header-title, .heder-title__rpide{
+        font-size: 24px;
+    }
+    .header__subtitle{
+        font-size: 14px;
+    }
+    .header__btn{
+        font-size: 11px;
+        width: 110px;
+        height: 33px
+    }
+    .section__subtitle {
+        margin-bottom: 30px;
+        font-size: 12px;
+    }
+    .directions{
+        padding-bottom: 0;
+    }
+    .directions__item {
+        height: 220px;
+    }
+    .overlay {
+        font-size: 14px;
+        margin-top: 6px;
+        margin-left: 9px;
+    }
+    .text-bottom {  
+        font-size: 7px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+    }
+    .section__title-padding {
+        padding-top: 30px;
+    }
+    .values__items-box {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+    .values__item {
+        max-width: 220px;
+    }
+    .advantages__icon {
+        width: 30%;
+    }
+    .advantages__item-text {
+        font-size: 9px;
+        line-height: 13px;
+        max-width: 100px;
+    }
+    .reviews{
+        padding-bottom: 60px;
+    }
+    .slick-dotted.slick-slider{
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    .slider__item-img {
+        height: 76%;
+    }
+    .slick-list{
+        height: 410px;
+    }
+    .geography-of-work__item {
+        font-size: 9px;
+    }
+    .geography-of-work__title{
+        font-size: 2.7vw;
+        margin-bottom: 20px;
+    }
+    .text-blok__btn{
+        font-size: 2vw;
+    }
+    .footer__form-header {
+        font-size: 3.4vw;
+    }
+}
+
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -951,3 +1425,4 @@ h1, h2, h3, h4{
         transform: translateY(0);
     }
 }
+

@@ -314,6 +314,19 @@ h1, h2, h3, h4{
     background-color: rgba(7, 7, 7, 0.4);
 }
 
+.oner-link{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
 .overlay{
     color: #E0E4E7;
     font-family: Oswald;
@@ -700,8 +713,24 @@ h1, h2, h3, h4{
 
 .footer{
     border-top: 1px solid rgba(224, 228, 231, 0.16);
-    padding-bottom: 60px;
 }
+
+.policy__box{
+    margin-top: 60px;
+    background: #1b1c24;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.policy__link{
+    color: #E0E4E7;
+    font-family: 'Inter';
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 
 .footer__main-content{
     display: flex;
@@ -736,13 +765,23 @@ h1, h2, h3, h4{
     margin-bottom: 30px;
 }
 
+.footer__social-icon{
+    width: 70px;
+}
+
 .footer__contacts-text{
+    display: flex;
+    flex-direction: column;
     color: #E0E4E7;
     font-family: 'Inter';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.contacts__footer{
+    margin-bottom: 10px;
 }
 
 .footer__form-header{
@@ -1015,6 +1054,49 @@ h1, h2, h3, h4{
   .main_pad{
     margin-bottom: 70px;
   }
+
+
+
+
+.title {
+    color: #E0E4E7;
+    font-size: 2vw;
+    font-family: "Inter";
+    margin-bottom: 30px;
+}
+
+.paragraph {
+    color: #E0E4E7;
+    font-size: 1vw;
+    font-family: "Inter";
+    margin-bottom: 10px;
+    line-height: 1.5vw;
+    padding-bottom: 14px;
+}
+
+.list {
+    color: #E0E4E7;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+.list li {
+    font-size: 1vw;
+    margin-bottom: 5px;
+}
+
+.email {
+    color: #E0E4E7;
+    text-decoration: none;
+}
+
+.email:hover {
+    text-decoration: underline;
+}
+
+
 
 @media (max-width: 1024px) {
     .values__items-box{

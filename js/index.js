@@ -8,6 +8,19 @@ function setZIndex(square) {
     square.style.zIndex = 3;
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  var directionItems = document.querySelectorAll('.directions__items .directions__item');
+
+  directionItems.forEach(function(item) {
+      item.addEventListener('click', function() {
+          var link = this.querySelector('.oner-link');
+          if (link) {
+              window.location.href = link.href;
+          }
+      });
+  });
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const squares = document.querySelectorAll('.directions__item');
 

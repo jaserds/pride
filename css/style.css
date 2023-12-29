@@ -995,6 +995,7 @@ h1, h2, h3, h4{
 #gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     row-gap: 10px;
     column-gap: 10px;
   }
@@ -1012,6 +1013,7 @@ h1, h2, h3, h4{
   .thumbnail {
     cursor: pointer;
     width: 100%;
+    min-height: 400px;
     height: 100%;
     object-fit: cover;
   }
@@ -1149,6 +1151,9 @@ h1, h2, h3, h4{
     }
     .slick-slide {
         margin: 0 10px;
+    }
+    .thumbnail{
+        min-height: 300px;
     }
 }
 

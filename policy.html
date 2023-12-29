@@ -114,11 +114,11 @@
                 </div>
                 <div class="footer__main-content-right">
                     <h3 class="footer__form-header">РАССЧИТАЙТЕ СТОИМОСТЬ ПРОМОАКЦИИ</h3>
-                    <form action="" class="footer__form">
-                        <input type="text" class="footer__form-input" placeholder="Имя" required>
-                        <input type="text" class="footer__form-input" placeholder="Телефон" required>
-                        <input type="text" class="footer__form-input" placeholder="Почта" required>
-                        <textarea class="footer__form-textarea" name="" id="" cols="30" rows="10" placeholder="Кратко опишите задачу"></textarea>
+                    <form class="footer__form" action="process_form.php" method="post">
+                        <input type="text" class="footer__form-input" name="name" placeholder="Имя" required>
+                        <input type="text" class="footer__form-input" name="phone" placeholder="Телефон" required>
+                        <input type="text" class="footer__form-input" name="mail" placeholder="Почта" required>
+                        <textarea class="footer__form-textarea" name="message" id="" cols="30" rows="10" placeholder="Кратко опишите задачу"></textarea>
                         <input class="footer__form-btn" type="button" value="Отправить">
                     </form>
                 </div>
